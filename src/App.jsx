@@ -2,6 +2,8 @@ import styled, { ThemeProvider } from "styled-components";
 import { darkTheme } from "./utils/Themes";
 import Navbar from "./components/navbar/Navbar";
 import { BrowserRouter } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
+import Hero from "./components/hero/Hero";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -31,6 +33,13 @@ function App() {
     <ThemeProvider theme={darkTheme}>
       <BrowserRouter>
         <Navbar />
+        <Body>
+          <AnimatePresence>
+            <div>
+              <Hero />
+            </div>
+          </AnimatePresence>
+        </Body>
       </BrowserRouter>
     </ThemeProvider>
   );
