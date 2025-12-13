@@ -6,7 +6,9 @@ import { AnimatePresence } from "framer-motion";
 import Hero  from "./components/hero/Hero";
 import Skills from "./components/skills/Skills";
 import Experience from "./components/experience/Experience";
-
+import { useState } from "react";
+import Projects from "./components/projects/Projects";
+import ProjectDetails from "./components/dialog/ProjectDetails";
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
   width: 100%;
@@ -31,6 +33,7 @@ const Wrapper = styled.div`
 `;
 
 function App() {
+  const [openModal, setOpenModal] = useState({ state: false, project: null });
   return (
     <ThemeProvider theme={darkTheme}>
       <BrowserRouter>
@@ -43,6 +46,13 @@ function App() {
                 <Skills />
                 <Experience />
               </Wrapper>
+              <Projects openModal={openModal} setOpenModal={setOpenModal} />
+              {openModal.state && (
+                <ProjectDetails
+                  openModal={openModal}
+                  setOpenModal={setOpenModal}
+                />
+              )}
             </div>
           </AnimatePresence>
         </Body>

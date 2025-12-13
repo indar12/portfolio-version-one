@@ -176,3 +176,58 @@ export const education = [
   },
 ];
 
+export const projects = [
+  {
+    id: 11,
+    title: "Job Portal",
+    description:
+      "Built a Job Portal app with React.js, allowing candidates to apply, save jobs, and recruiters to manage listings, with secure authentication via Clerk.",
+    image:
+      "",
+    tags: [
+      "React Js",
+      "Tailwind CSS",
+      "Javascript",
+      "Clerk",
+    ],
+    category: "web app",
+    github: "",
+    webapp: "",
+  },
+  {
+    id: 12,
+    title: "My Portfolio",
+    description:
+      "My Portfolio is a React.js application that serves as an online portfolio to showcase my work, skills, and achievements. It provides an overview of my background, displays my projects, and offers a way to contact me.",
+    image:
+      "",
+    tags: [
+      "React Js",
+      "HTML5",
+      "Tailwind CSS",
+      "Javascript",
+    ],
+    category: "web app",
+    github: "",
+    webapp: "",
+  },
+  {
+    id: 9,
+    title: "SpendWise",
+    description:
+      " SpendWise is a web application designed to streamline expense management and enhance financial tracking system with real-time logging, secure authentication via Express.js, and MongoDB for managing expenses. Designed a responsive UI using Ant Design, ensuring seamless cross-device budgeting and tracking.",
+    image:
+      "",
+    tags: [
+      "React Js",
+      "MongoDb",
+      "Node Js",
+      "Express Js",
+      "Tailwind CSS",
+      "Javascript",
+    ],
+    category: "web app",
+    github: "",
+    webapp: "",
+  },
+];
