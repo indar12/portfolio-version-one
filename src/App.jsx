@@ -5,6 +5,7 @@ import { BrowserRouter } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import Hero  from "./components/hero/Hero";
 import Skills from "./components/skills/Skills";
+import Experience from "./components/experience/Experience";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -40,6 +41,7 @@ function App() {
               <Hero />
               <Wrapper>
                 <Skills />
+                <Experience />
               </Wrapper>
             </div>
           </AnimatePresence>
