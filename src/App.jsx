@@ -3,7 +3,8 @@ import { darkTheme } from "./utils/Themes";
 import Navbar from "./components/navbar/Navbar";
 import { BrowserRouter } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
-import Hero from "./components/hero/Hero";
+import Hero  from "./components/hero/Hero";
+import Skills from "./components/skills/Skills";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -37,6 +38,9 @@ function App() {
           <AnimatePresence>
             <div>
               <Hero />
+              <Wrapper>
+                <Skills />
+              </Wrapper>
             </div>
           </AnimatePresence>
         </Body>

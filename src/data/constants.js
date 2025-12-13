@@ -5,7 +5,7 @@ export const Bio = {
     "Programmer",
   ],
   description:
-    "I'm a highly motivated and versatile individual with a strong aptitude for problem-solving and a deep commitment to continuous development. I enjoy tackling complex challenges, analyzing data, and developing effective solutions. I'm a firm believer in lifelong learning and actively pursue opportunities to expand my knowledge and skillset.",
+    "I'm a Full Stack Developer specializing in modern JavaScript frameworks and backend technologies. I enjoy building impactful products, optimizing performance, and turning ideas into functional digital experiences. I’m always learning, evolving, and pushing myself to master new tools and techniques.",
   github: "https://github.com/indar12",
   gmail: "indrajithmohanasundaram@gmail.com",
   resume:
