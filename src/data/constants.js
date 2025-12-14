@@ -15,68 +15,68 @@ export const skills = [
     skills: [
       {
         name: "React Js",
-        image: "src/assets/react.svg",
+        image: "/assets/react.svg",
       },
       {
         name: "Redux Toolkit",
-        image: "src/assets/redux-logo.svg",
+        image: "/assets/redux-logo.svg",
       },
       {
         name: "React Router",
-        image: "src/assets/react-router.svg",
+        image: "/assets/react-router.svg",
       },
       {
         name: "HTML",
-        image: "src/assets/HTML5-logo.png",
+        image: "/assets/HTML5-logo.png",
       },
       {
         name: "CSS",
-        image: "src/assets/CSS-logo.png",
+        image: "/assets/CSS-logo.png",
       },
       {
         name: "SASS",
-        image: "src/assets/SASS.png",
+        image: "/assets/SASS.png",
       },
       {
         name: "JavaScript",
-        image: "src/assets/javascript-logo.svg",
+        image: "/assets/javascript-logo.svg",
       },
 
       {
         name: "Typescript",
-        image: "src/assets/Typescript_logo.png",
+        image: "/assets/Typescript_logo.png",
       },
       {
         name: "Fuse JS",
-        image: "src/assets/fusejs.png",
+        image: "/assets/fusejs.png",
       },
       {
         name: "Tailwind",
-        image: "src/assets/Tailwind_CSS_logo.png",
+        image: "/assets/Tailwind_CSS_logo.png",
       },
       {
         name: "MUI",
-        image: "src/assets/MUI.png",
+        image: "/assets/MUI.png",
       },
       {
         name: "Framer motion",
-        image: "src/assets/motion.png",
+        image: "/assets/motion.png",
       },
       {
         name: "Clerk",
-        image: "src/assets/clerk.webp",
+        image: "/assets/clerk.webp",
       },
       {
         name: "JWT",
-        image: "src/assets/jwt.webp",
+        image: "/assets/jwt.webp",
       },
       {
         name: "PolymerJS",
-        image: "src/assets/polymer.png",
+        image: "/assets/polymer.png",
       },
       {
         name: "StencilJS",
-        image: "src/assets/stencil.png",
+        image: "/assets/stencil.png",
       },
     ],
   },
@@ -85,23 +85,23 @@ export const skills = [
     skills: [
       {
         name: "Node Js",
-        image: "src/assets/nodejs.svg",
+        image: "/assets/nodejs.svg",
       },
       {
         name: "Express Js",
-        image: "src/assets/expressjs.png",
+        image: "/assets/expressjs.png",
       },
       {
         name: "MySQL",
-        image: "src/assets/mysql-logo.svg",
+        image: "/assets/mysql-logo.svg",
       },
       {
         name: "PostgreSQL",
-        image: "src/assets/postgreSQL.png",
+        image: "/assets/postgreSQL.png",
       },
       {
         name: "Swagger",
-        image: "src/assets/swagger.png",
+        image: "/assets/swagger.png",
       },
     ],
   },
@@ -111,51 +111,51 @@ export const skills = [
     skills: [
       {
         name: "Agile",
-        image: "src/assets/agile.jpg",
+        image: "/assets/agile.jpg",
       },
       {
         name: "Git",
-        image: "src/assets/git.svg",
+        image: "/assets/git.svg",
       },
       {
         name: "GitHub",
-        image: "src/assets/github.svg",
+        image: "/assets/github.svg",
       },
       {
         name: "Bitbucket",
-        image: "src/assets/bitbucket.png",
+        image: "/assets/bitbucket.png",
       },
       {
         name: "Jira",
-        image: "src/assets/jira.png",
+        image: "/assets/jira.png",
       },
       {
         name: "Confluence",
-        image: "src/assets/confluence.png",
+        image: "/assets/confluence.png",
       },
       {
         name: "Azure DevOps",
-        image: "src/assets/azure.webp",
+        image: "/assets/azure.webp",
       },
       {
         name: "VS Code",
-        image: "src/assets/vscode.png",
+        image: "/assets/vscode.png",
       },
       {
         name: "Jest",
-        image: "src/assets/jest.svg",
+        image: "/assets/jest.svg",
       },
       {
         name: "Playwright",
-        image: "src/assets/Playwright_Logo.svg",
+        image: "/assets/Playwright_Logo.svg",
       },
       {
         name: "AWS",
-        image: "src/assets/aws.png",
+        image: "/assets/aws.png",
       },
       {
         name: "Vite",
-        image: "src/assets/vite.png",
+        image: "/assets/vite.png",
       },
     ],
   },
@@ -164,7 +164,7 @@ export const skills = [
 export const experiences = [
   {
     id: 0,
-    img: "src/assets/soliton.png",
+    img: "/assets/soliton.png",
     role: "Senior Project Engineer",
     company: "Soliton Technologies",
     date: "June 2025 - Sep 2025",
@@ -191,7 +191,7 @@ export const experiences = [
   },
   {
     id: 1,
-    img: "src/assets/soliton.png",
+    img: "/assets/soliton.png",
     role: "Project Engineer",
     company: "Soliton Technologies",
     date: "June 2023 - May 2025",
@@ -225,7 +225,7 @@ export const experiences = [
   },
   {
     id: 2,
-    img: "src/assets/u&i.webp",
+    img: "/assets/u&i.webp",
     role: "Volunteer",
     company: "U&I Trust",
     date: "Sept 2022 - Jun 2023",
@@ -235,7 +235,7 @@ export const experiences = [
   },
   {
     id: 3,
-    img: "src/assets/soliton.png",
+    img: "/assets/soliton.png",
     role: "Intern",
     company: "Soliton Technologies",
     date: "July 2022 - May 2023",
@@ -254,7 +254,7 @@ export const experiences = [
 
   {
     id: 4,
-    img: "src/assets/devtown.jpeg",
+    img: "/assets/devtown.jpeg",
     role: "Intern",
     company: "Devtown",
     date: "April 2022 - June 2022",
@@ -276,7 +276,7 @@ export const experiences = [
 export const education = [
   {
     id: 0,
-    img: "src/assets/Kongu.jpg",
+    img: "/assets/Kongu.jpg",
     school: "Kongu Engineering College",
     date: "Aug 2019 - May 2023",
     grade: "8.52 CGPA",
@@ -285,7 +285,7 @@ export const education = [
   },
   {
     id: 1,
-    img: "src/assets/vv-logo.png",
+    img: "/assets/vv-logo.png",
     school: "Vidhyaa Vikas Matric Hr. Sec. School",
     date: "June 2018 - May 2019",
     grade: "89.5%",
@@ -293,7 +293,7 @@ export const education = [
   },
   {
     id: 2,
-    img: "src/assets/holy.jpg",
+    img: "/assets/holy.jpg",
     school: "Holy Angels Matric Hr. Sec. School",
     date: "June 2016 - May 2017",
     grade: "96%",
