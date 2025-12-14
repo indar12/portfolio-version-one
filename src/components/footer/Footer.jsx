@@ -1,9 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import { Bio } from "../../data/constants";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import { FaGithub } from 'react-icons/fa';
-import { SiGmail } from 'react-icons/si';
+import { FaGithub } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
+
+import { Bio } from "../../data/constants";
 
 const FooterContainer = styled.div`
   width: 100%;
@@ -88,10 +89,18 @@ const Footer = () => {
         <Logo>Indrajith Mohanasundaram</Logo>
 
         <div className="flex flex-row gap-1">
-          <SocialMediaIcon href={Bio.linkedin} target="_blank" rel="noopener noreferrer">
+          <SocialMediaIcon
+            href={Bio.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <LinkedInIcon />
           </SocialMediaIcon>
-          <SocialMediaIcon href={Bio.github} target="_blank" rel="noopener noreferrer">
+          <SocialMediaIcon
+            href={Bio.github}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaGithub />
           </SocialMediaIcon>
           <SocialMediaIcon href={`mailto:${Bio.gmail}`}>

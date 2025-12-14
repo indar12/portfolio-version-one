@@ -51,7 +51,6 @@ const Date = styled.div`
   }
 `;
 
-
 const Description = styled.div`
   width: 100%;
   font-size: 15px;
@@ -90,7 +89,7 @@ const ItemWrapper = styled.div`
 const ExperienceCard = ({ experience }) => {
   return (
     <VerticalTimelineElement
-       className="vertical-timeline-element--work"
+      className="vertical-timeline-element--work"
       contentStyle={{
         display: "flex",
         flexDirection: "column",

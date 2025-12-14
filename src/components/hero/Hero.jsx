@@ -1,10 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import { Bio } from "../../data/constants";
 import Typewriter from "typewriter-effect";
-import HeroImg from "../../assets/Indrajith.jpeg";
-import Tilt from 'react-parallax-tilt';
+import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
+
+import HeroImg from "../../assets/Indrajith.jpeg";
+import { Bio } from "../../data/constants";
 import {
   headContainerAnimation,
   headContentAnimation,

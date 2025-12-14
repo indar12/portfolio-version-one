@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+
 import { projects } from "../../data/constants";
 import ProjectCard from "../cards/ProjectCard";
 
@@ -49,9 +50,6 @@ const Desc = styled.div`
   }
 `;
 
-
-
-
 const CardContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -61,7 +59,6 @@ const CardContainer = styled.div`
 `;
 
 const Projects = ({ openModal, setOpenModal }) => {
-
   return (
     <Container id="Projects">
       <Wrapper>
@@ -71,19 +68,18 @@ const Projects = ({ openModal, setOpenModal }) => {
             marginBottom: "40px",
           }}
         >
-          I have worked on a wide range of projects. Adding here some of my good projects.
+          I have worked on a wide range of projects. Adding here some of my good
+          projects.
         </Desc>
-  
+
         <CardContainer>
-          {
-            projects.map((project) => (
-              <ProjectCard
-                project={project}
-                openModal={openModal}
-                setOpenModal={setOpenModal}
-              />
-            ))}
-  
+          {projects.map((project) => (
+            <ProjectCard
+              project={project}
+              openModal={openModal}
+              setOpenModal={setOpenModal}
+            />
+          ))}
         </CardContainer>
       </Wrapper>
     </Container>

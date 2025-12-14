@@ -74,7 +74,6 @@ const Span = styled.div``;
 const EducationCard = ({ education }) => {
   return (
     <VerticalTimelineElement
-  
       contentStyle={{
         display: "flex",
         flexDirection: "column",
@@ -100,7 +99,7 @@ const EducationCard = ({ education }) => {
         </Body>
       </Top>
       <Grade>
-        <b>Grade :</b>
+        <b>Grade : </b>
         {education.grade}
       </Grade>
       <Description>

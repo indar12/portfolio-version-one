@@ -1,12 +1,13 @@
 import styled, { ThemeProvider } from "styled-components";
-import { darkTheme } from "./utils/Themes";
-import Navbar from "./components/navbar/Navbar";
 import { BrowserRouter } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
-import Hero  from "./components/hero/Hero";
+import { useState } from "react";
+
+import { darkTheme } from "./utils/Themes";
+import Navbar from "./components/navbar/Navbar";
+import Hero from "./components/hero/Hero";
 import Skills from "./components/skills/Skills";
 import Experience from "./components/experience/Experience";
-import { useState } from "react";
 import Projects from "./components/projects/Projects";
 import ProjectDetails from "./components/dialog/ProjectDetails";
 import Education from "./components/education/Education";
@@ -21,7 +22,8 @@ const Body = styled.div`
 
 const Wrapper = styled.div`
   padding-bottom: 100px;
-  background: linear-gradient(
+  background:
+    linear-gradient(
       38.73deg,
       rgba(204, 0, 187, 0.15) 0%,
       rgba(201, 32, 184, 0) 50%

@@ -1,29 +1,61 @@
-import js from '@eslint/js'
-import globals from 'globals'
-import reactHooks from 'eslint-plugin-react-hooks'
-import reactRefresh from 'eslint-plugin-react-refresh'
-import { defineConfig, globalIgnores } from 'eslint/config'
+import js from "@eslint/js";
+import globals from "globals";
+import react from "eslint-plugin-react";
+import reactHooks from "eslint-plugin-react-hooks";
+import jsxA11y from "eslint-plugin-jsx-a11y";
+import importPlugin from "eslint-plugin-import";
+import tailwindcss from "eslint-plugin-tailwindcss";
+import prettier from "eslint-plugin-prettier";
 
-export default defineConfig([
-  globalIgnores(['dist']),
+export default [
+  js.configs.recommended,
   {
-    files: ['**/*.{js,jsx}'],
-    extends: [
-      js.configs.recommended,
-      reactHooks.configs.flat.recommended,
-      reactRefresh.configs.vite,
-    ],
+    files: ["**/*.{js,jsx}"],
     languageOptions: {
-      ecmaVersion: 2020,
+      ecmaVersion: "latest",
+      sourceType: "module",
       globals: globals.browser,
       parserOptions: {
-        ecmaVersion: 'latest',
         ecmaFeatures: { jsx: true },
-        sourceType: 'module',
       },
     },
+    plugins: {
+      react,
+      "react-hooks": reactHooks,
+      "jsx-a11y": jsxA11y,
+      import: importPlugin,
+      tailwindcss,
+      prettier,
+    },
+    settings: {
+      react: { version: "detect" },
+    },
     rules: {
-      'no-unused-vars': ['error', { varsIgnorePattern: '^(motion|[A-Z_])' }],
+      "react/react-in-jsx-scope": "off",
+      "no-unused-vars": "off",
+      "react/prop-types": "off",
+
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn",
+
+      "prettier/prettier": "error",
+
+      "tailwindcss/no-custom-classname": "off",
+
+      "import/order": [
+        "warn",
+        {
+          groups: [
+            "builtin",
+            "external",
+            "internal",
+            "parent",
+            "sibling",
+            "index",
+          ],
+          "newlines-between": "always",
+        },
+      ],
     },
   },
-])
+];

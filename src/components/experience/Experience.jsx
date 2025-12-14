@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { experiences } from "../../data/constants";
 import { VerticalTimeline } from "react-vertical-timeline-component";
+
+import { experiences } from "../../data/constants";
 import "react-vertical-timeline-component/style.min.css";
 import ExperienceCard from "../cards/ExperienceCard";
 
@@ -60,7 +61,9 @@ const Experience = () => {
             marginBottom: "40px",
           }}
         >
-          My work experience as a software engineer and working on different projects.
+          My work experience and working on different projects, collaborating
+          with cross-functional teams to build scalable, user-friendly solutions
+          and deliver high-quality features.
         </Desc>
 
         <VerticalTimeline>

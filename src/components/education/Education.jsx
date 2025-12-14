@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { education } from "../../data/constants";
 import { VerticalTimeline } from "react-vertical-timeline-component";
+
+import { education } from "../../data/constants";
 import "react-vertical-timeline-component/style.min.css";
 import EducationCard from "../cards/EducationCard";
 
@@ -65,10 +66,10 @@ const Education = () => {
         </Desc>
 
         <VerticalTimeline
-           style={{
+          style={{
             marginBottom: "40px",
-      
-          }}>
+          }}
+        >
           {education.map((education, index) => (
             <EducationCard key={`education-${index}`} education={education} />
           ))}
