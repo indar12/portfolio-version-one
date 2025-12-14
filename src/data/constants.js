@@ -70,6 +70,14 @@ export const skills = [
         name: "JWT",
         image: "src/assets/jwt.webp",
       },
+      {
+        name: "PolymerJS",
+        image: "src/assets/polymer.png",
+      },
+      {
+        name: "StencilJS",
+        image: "src/assets/stencil.png",
+      },
     ],
   },
   {
