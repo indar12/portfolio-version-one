@@ -9,6 +9,8 @@ import Experience from "./components/experience/Experience";
 import { useState } from "react";
 import Projects from "./components/projects/Projects";
 import ProjectDetails from "./components/dialog/ProjectDetails";
+import Education from "./components/education/Education";
+import Contact from "./components/contact/Contact";
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
   width: 100%;
@@ -47,6 +49,10 @@ function App() {
                 <Experience />
               </Wrapper>
               <Projects openModal={openModal} setOpenModal={setOpenModal} />
+              <Wrapper>
+                <Education />
+                <Contact />
+              </Wrapper>
               {openModal.state && (
                 <ProjectDetails
                   openModal={openModal}
