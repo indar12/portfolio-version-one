@@ -11,6 +11,7 @@ import Projects from "./components/projects/Projects";
 import ProjectDetails from "./components/dialog/ProjectDetails";
 import Education from "./components/education/Education";
 import Contact from "./components/contact/Contact";
+import Footer from "./components/footer/Footer";
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
   width: 100%;
@@ -53,6 +54,7 @@ function App() {
                 <Education />
                 <Contact />
               </Wrapper>
+              <Footer />
               {openModal.state && (
                 <ProjectDetails
                   openModal={openModal}
